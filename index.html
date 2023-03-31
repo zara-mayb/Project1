@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valorant Mock Info Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#agents">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#maps">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#player-cards">Player Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#arsenal">Arsenal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class=" header-text p-4 mt-5 bg-black text-white text-center fs-1 fw-bold border-2 border-danger">
+        <img src="./images/valorant.png" alt="valorant-logo" class="valorant me-auto">
+        VALORANT
+    </div>
+    <div class="bg-secondary text-white">
+        <div class="bg-image d-flex justify-content-center align-items-center"
+            style="background-image: url('./images/valorant-bg1.jpg'); height: 100vh">
+            <div class="val-box mask mx-4" style="background-color: rgba(36, 33, 33, 0.2)">
+                <div class="intro-text">
+                    <img src="./images/[CITYPNG.COM]HD Valorant White Text Logo PNG - 5019x1526.png"
+                        class="valorant-text" alt="val-logo-text">
+                    <h2 class="intro-text text-white fs-2">Learn about the popular 5v5 first person tactical shooter
+                        game</h2>
+                    <a href="https://playvalorant.com/en-us/news/announcements/beginners-guide/"
+                        class="d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-danger">Click For A Beginner's Guide</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="agents" class="bg-secondary text-white">
+        <div class="bg-image d-flex justify-content-center align-items-center"
+            style="background-image: url('./images/valorant-bg2.jpg'); height: 100vh">
+            <div class="val-box mask mx-4" style="background-color: rgba(197, 34, 34, 0.2)">
+                <p class="text-center display-1 mx-4 fw-bold">Meet Your Agents</p>
+            </div>
+            <div class="card d-flex justify-content-center align-items-center border-4" style="width: 35rem;">
+                <select name="dropdown" id="dropdown" class="form-select border-2 border-secondary bg-danger text-white"
+                    onchange="selectAgent()">
+                    <option selected disabled hidden>Select an Agent</option>
+                </select>
+                <img id="portrait" src="./images/valorant-bg3.jpg" class="card-img-top" alt="card-img-top">
+                <div class="card-body bg-danger">
+                    <p id="card-text" class="card-text text-white text-center border-3 border-dark">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="maps" class="bg-image d-flex justify-content-center align-items-center"
+        style="background-image: url('./images/valorant-bg5.jpg'); height: 100vh">
+        <div class="maps-text">
+            <div class="maps-box mask mx-3" style="background-color: #6b8688a4">
+                <p class="maps text-center display-1 fw-bold text-white d-flex justify-content-center align-items-center">MAPS</p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/Loading_Screen_Ascent.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Ascent</h3>
+                            <p>An open playground for small wars of position and attrition divide two sites on Ascent.
+                                Each
+                                site can be fortified by irreversible bomb doors; once they're down, you'll have to
+                                destroy
+                                them or find another way. Yield as little territory as possible.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Haven.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Haven</h3>
+                            <p>Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control
+                                three
+                                sites. There's more territory to control, but defenders can use the extra real estate
+                                for
+                                aggressive pushes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Icebox.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Icebox</h3>
+                            <p>Your next battleground is a secret Kingdom excavation site overtaken by the arctic. The
+                                two
+                                plant sites protected by snow and metal require some horizontal finesse. Take advantage
+                                of
+                                the ziplines and they'll never see you coming.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Bind.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Bind</h3>
+                            <p>Two sites. No middle. Gotta pick left or right. What's it going to be then? Both offer
+                                direct
+                                paths for attackers and a pair of one-way teleporters make it easier to flank.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Breeze (1).webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Breeze</h3>
+                            <p>Take in the sights of historic ruins or seaside caves on this tropical paradise. But
+                                bring
+                                some cover. You'll need them for the wide open spaces and long range engagements. Watch
+                                your
+                                flanks and this will be a Breeze.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Fracture.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Fracture</h3>
+                            <p>A top secret research facility split apart by a failed radianite experiment. With
+                                defender
+                                options as divided as the map, the choice is yours: meet the attackers on their own turf
+                                or
+                                batten down the hatches to weather the assault.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Split.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Split</h3>
+                            <p>If you want to go far, you'll have to go up. A pair of sites split by an elevated center
+                                allows for rapid movement using two rope ascenders. Each site is built with a looming
+                                tower
+                                vital for control. Remember to watch above before it all blows sky-high.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Pearl.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Pearl</h3>
+                            <p>Attackers push down into the Defenders on this two-site map set in a vibrant, underwater
+                                city. Pearl is a geo-driven map with no mechanics. Take the fight through a compact mid
+                                or
+                                the longer range wings in our first map set in Omega Earth.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Loading_Screen_Lotus.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Lotus</h3>
+                            <p>A mysterious structure housing an astral conduit radiates with ancient power. Great stone
+                                doors provide a variety of movement opportunities and unlock the paths to three
+                                mysterious
+                                sites.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="player-cards" class="bg-image d-flex justify-content-center align-items-center"
+        style="background-image: url('./images/valorant-bg4.webp'); height: 100vh">
+        <div class="card d-flex justify-content-center align-items-center border-4 border-warning"
+            style="width: 15rem;">
+            <select name="dropdown2" id="dropdown2" class="form-select bg-warning text-dark"
+                onchange="selectPlayerCard()">
+                <option selected disabled hidden>Select a Player Card</option>
+            </select>
+            <img id="card-portrait" src="./images/valorant-playercard.webp" class="card-img-top" alt="...">
+        </div>
+        <div class="pcard-box mask mx-4" style="background-color: rgba(197, 159, 34, 0.6)">
+            <p class="text-center display-1 mx-4 fw-bold text-white">Choose The Player</p>
+            <p class="text-center display-1 mx-4 fw-bold text-white">Card For You!</p>
+        </div>
+    </div>
+    <div id="arsenal" class="bg-image d-flex justify-content-center align-items-center"
+        style="background-image: url('./images/valorant-bg6.jpg'); height: 100vh">
+        <div class="arsenal-text">
+            <div class="val-box mask mx-3" style="background-color: rgba(207, 197, 181, 0.33)">
+                <p class="display-1 fw-bold text-white d-flex justify-content-center align-items-center">ARSENAL</p>
+            </div>
+            <div class="weapons">
+                <div class="left d-flex justify-content-center align-items-center">
+                    <div class="arsenal-card text-center bg-dark">
+                        <img src="./images/displayicon1.png" alt="odin" class="weapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Suppressive, high damage fire with surprising stability. Spray enemies at
+                            short range and use alt. fire to make yourself a living turret.</div>
+                    </div>
+                    <div class="arsenal-card text-center bg-dark">
+                        <img src="./images/displayicon2.png" alt="vandal" class="weapon"  onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Extended fire results in less stability, however. The Vandal retains high damage over distance and rewards those who focus single shots at a target's head.</div>
+                    </div>
+                    <div class="arsenal-card text-center bg-dark">
+                        <img src="./images/displayicon3.png" alt="bulldog" class="weapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">A surefire beast when you can pick your shots. Alt. fire lets you ADS and spew accurate, short bursts at anyone who tries you from medium to long-range.</div>
+                    </div>
+                    <div class="arsenal-card text-center bg-dark">
+                        <img src="./images/displayicon4.png" alt="phantom" class="weapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Go full auto for anyone who tests you up close and short controlled bursts scramble enemies from anywhere. Best when fired while stationary.</div>
+                    </div>
+                </div>
+                <div class="right d-flex justify-content-center align-items-center">
+                    <div class="arsenal-card text-center bg-dark">
+                        <img src="./images/displayicon5.png" alt="judge" class="weapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Primary fire hammers short range targets and you'll need to be steady to nail anything beyond an arm's-length.</div>
+                    </div>
+                    <div class="arsenal-card text-center bg-dark">
+                        <img src="./images/displayicon6.png" alt="bucky" class="weapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Heavy but stable, Bucky's primary fire is for holding tight corners or charging close quarters. Alternate fire strikes targets at medium range.</div>
+                    </div>
+                    <div class="arsenal-card2 text-center bg-dark">
+                        <img src="./images/displayicon7.png" alt="frenzy" class="smweapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Lightweight machine pistol that excels at firing on the move. Its high rate-of-fire can be difficult to control, so try short bursts at medium ranges.</div>
+                    </div>
+                    <div class="arsenal-card2 text-center bg-dark">
+                        <img src="./images/displayicon8.png" alt="classic" class="smweapon" onmouseover="scale(this,1.15)" onmouseleave="scale(this,1)">
+                        <div class="weapons-text text-white">Primary fire lands precise shots when still, and is equipped with an alternate burst-firing mode for close encounters.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

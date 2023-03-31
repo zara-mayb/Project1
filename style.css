@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rajdhani&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Jost', sans-serif */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+img.valorant {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+img.valorant-text {
+    width: 100%;
+    height: 200px;
+}
+.carousel {
+    width: 800px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yeseva One', cursive;
+}
+.card-text {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.card-body {
+    width: 100%; 
+}
+.intro-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    margin: 0px auto;
+}
+.intro-text a {
+    text-decoration: none;
+}
+.maps {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.mask p {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.header-text {
+    font-family: 'Rajdhani', sans-serif
+}
+.nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.weapon {
+    width: 100%;
+    background-color: rgb(204, 201, 195);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.smweapon {
+    width: 100%;
+    background-color: rgb(204, 201, 195);
+    padding: 10px;
+}
+.arsenal-card {
+    width: 400px;
+    margin: 20px;
+    border: solid rgb(65, 61, 61) 4px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-bottom: 20px;
+}
+.arsenal-card2 {
+    width: 200px;
+    margin: 20px;
+    border: solid rgb(65, 61, 61) 4px;
+    font-family: 'Titillium Web', sans-serif;
+}
+img .weapon {
+    transition: 200ms;
+}
+.maps-box {
+    border-radius: 16%;
+}
+.pcard-box {
+    border-radius: 5%;
+}
+.val-box {
+    border-radius: 16%;
+}
